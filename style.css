@@ -1,0 +1,176 @@
+/* ============= */
+/* GLOBAL STYLES */
+/* ============= */
+html, body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  position: relative;
+  padding: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ====== */
+/* HEADER */
+/* ====== */
+header {
+  position: sticky;
+}
+
+.contact-bar {
+  display: flex;
+  height: 30px;
+  width: 100vw;
+  align-items: center;
+  background-color: #333;
+  color: #eee;
+}
+
+.contact-details {
+  display: flex;
+  padding-left: 6vw;
+  font-size: 0.95rem;
+}
+
+.contact-details div {
+  padding-right: 20px;
+}
+
+.contact-numbers {
+  font-size: 0.95em;
+}
+
+.navbar {
+  height: 90px;
+  align-items: center;
+  color: #333;  
+  display: flex;
+  justify-content: space-between;
+  padding: 0 6vw;
+}
+
+
+.logo img {
+  height: 70px;
+}
+
+.main-menu a {
+  padding: 5px 10px;
+  margin: 0 2rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+
+.main-menu a:hover {
+  border-bottom-color: #3089E7;
+}
+
+.main-menu .active {
+  border-bottom-color: #3089E7;
+}
+
+
+/* ========= */
+/* HOME PAGE */
+/* ========= */
+
+
+
+/* ============= */
+/* SERVICES PAGE */
+/* ============= */
+
+/* ============ */
+/* GALLERY PAGE */
+/* ============ */
+
+/* ============ */
+/* CONTACT PAGE */
+/* ============ */
+
+/* ====== */
+/* FOOTER */
+/* ====== */
+footer {
+  height: 140px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #333;
+  padding: 0 6vw;
+  align-items: center;
+  color: rgba(238, 238, 238, 0.95);
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+footer div {
+  display: flex;
+  justify-content: center;
+}
+
+footer i {
+  font-size: 1.2rem;
+}
+
+.footer-contact {
+  flex-direction: column;
+}
+
+.footer-contact .contact-numbers {
+  padding-bottom: 15px;
+}
+
+.footer-contact .far {
+  font-size: 1.3em;
+  padding-right: 5px;
+}
+
+.footer-contact .fas {
+  font-size: 1.2em;
+  padding-right: 5px;
+}
+
+.footer-logo img {
+  height: 80px;
+}
+
+.footer-address {
+  display: flex;
+  line-height: 2.2rem;
+}
+
+.footer-address .fas {
+  font-size: 1.4rem;
+  padding-right: 5px;
+}
+
+.copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 20px;
+  background-color: #333;
+  color: #eee;
+  padding-bottom: 5px;
+  font-size: 0.8rem;
+}
+
+/* ============= */
+/* MEDIA QUERIES */
+/* ============= */
