@@ -142,6 +142,7 @@ header {
   transform: translateX(-50%);
   color: #fff;
   text-shadow: 2px 2px 4px var(--dark-color);
+  text-align: center;
 }
 
 .more-info-link:hover {
@@ -566,12 +567,12 @@ footer i {
 }
 
 @media only screen and (max-width: 760px) {
-  .contact-bar {
+  /* .contact-bar {
     height: 20px;
-  }
+  } */
 
   .contact-details {
-    font-size: 0.6rem;
+    font-size: 0.7rem;
   }
 
   .logo img {
@@ -597,6 +598,7 @@ footer i {
 
   .more-info-link {
     font-size: 0.8rem;
+    top: 85vh;
   }
 
   .about {
