@@ -38,11 +38,12 @@ const heroText = [
 ];
 
 let i = 0;
+document.querySelector('.hero').style.transition = 'all 1s ease';
 
 function changeBackgroundImage() {
   i < (backgroundImages.length - 1) ? ++i : i = 0;
   document.querySelector('.hero').style.backgroundImage = backgroundImages[i];
-  document.querySelector('.hero-text').innerHTML = heroText[i];
+  document.querySelector('.hero-text').innerHTML = heroText[i];  
 }
 
 setInterval(changeBackgroundImage, 3000);
