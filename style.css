@@ -22,6 +22,7 @@ html {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
   padding: 0;
+  font-weight: normal;
 }
 
 .container {
@@ -76,7 +77,7 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 0 4vw;
-  box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.05);
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
 }
 
 
@@ -90,6 +91,7 @@ header {
   text-transform: uppercase;
   font-weight: 400;
   border-bottom: 2px solid transparent;
+  transition: all 150ms ease-in;
 }
 
 .main-menu a:hover {
@@ -143,10 +145,11 @@ header {
   color: #fff;
   text-shadow: 2px 2px 4px var(--dark-color);
   text-align: center;
+  transition: all 150ms ease-in;
 }
 
 .more-info-link:hover {
-  font-size: 1.1rem;
+  font-size: 1.06rem;
 }
 
 .about {
@@ -165,7 +168,7 @@ header {
   text-align: center;
   justify-content: center;
   align-items: center ;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 .section-title-underline {
@@ -265,10 +268,12 @@ header {
   padding: 10px 20px;
   border-radius: 10px;
   margin: 10px;
+  transition: all 100ms ease-in;
 }
 
 .buttons:hover {
-  box-shadow: 2px 2px 10px rgb(100, 100, 100);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  scale: 1.01;
 }
 
 .button1 {
@@ -290,7 +295,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 170px;
 }
 
   /* .services-page .section-title-underline {
@@ -311,7 +316,7 @@ header {
 .service-text-box {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.8);
   border-radius: 10px;
   text-align: center;
   justify-content: center;
@@ -370,6 +375,49 @@ header {
 /* GALLERY PAGE */
 /* ============ */
 
+.gallery-page {
+  padding: 0 10vw;
+}
+
+.gallery-page > .section-title {
+  margin-bottom: 0;
+}
+
+.gallery-sub-section {
+  padding: 0 1rem;
+}
+
+.gallery-sub-section-heading {
+  padding: 2rem 0;
+}
+
+.gallery-container {
+  margin-bottom: 40px;
+}
+
+.gallery-thumbnail {
+  border: solid 2px #333;
+  width: 150px;
+  height: 150px;
+  background-blend-mode: lighten;
+  background-color: transparent;
+  transition: all 250ms ease;
+}
+
+.gallery-thumbnail:hover {
+  scale: 0.95;
+}
+
+.gallery-footer {
+  margin-top: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .gallery-page {
+    padding: 0 2vw;
+  }
+}
+
 /* ============ */
 /* CONTACT PAGE */
 /* ============ */
@@ -383,7 +431,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 200px;
+  margin-top: 170px;
 }
 
 .contact-main {
