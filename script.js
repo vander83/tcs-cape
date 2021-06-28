@@ -37,6 +37,13 @@ const heroText = [
   INSPECTION & CONSULTING`
 ];
 
+const heroNextImage = [
+  `img/fire-2.jpg`, 
+  `img/flooring-1.jpg`,
+  `img/inspection-1.jpg`,
+  `img/steel-grid-roof.jpg`  
+]
+
 let i = 0;
 document.querySelector('.hero').style.transition = 'all 1s ease';
 
@@ -44,6 +51,7 @@ function changeBackgroundImage() {
   i < (backgroundImages.length - 1) ? ++i : i = 0;
   document.querySelector('.hero').style.backgroundImage = backgroundImages[i];
   document.querySelector('.hero-text').innerHTML = heroText[i];  
+  document.querySelector('.hero-next-image').src = heroNextImage[i];
 }
 
 setInterval(changeBackgroundImage, 3000);
