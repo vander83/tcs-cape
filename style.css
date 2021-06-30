@@ -188,6 +188,10 @@ header {
   margin: auto;
 }
 
+.about-text {
+  line-height: 1.5;
+}
+
 .person-card {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -329,6 +333,7 @@ header {
   padding: 40px 20px;
   color: #fff;
   font-weight: 300;
+  line-height: 1.5;
 }
 
 .service-title {
